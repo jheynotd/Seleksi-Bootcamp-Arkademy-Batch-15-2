@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Bitter', serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.container {
+  max-height: 600px;
+  margin: 0 auto;
+  padding: 0px 140px;
+}
+
+.btn {
+  display: inline-block;
+}
+
+/* header */
+
+header {
+  background-color: #E8E8E8;
+  height: 80px;
+  width: 100%;
+  position :fixed;
+}
+
+.menu-icon {
+	float: left;
+	font-size: 23px;
+	margin-top: 5px;
+	display: none;
+}
+
+.left img {
+  float: left;
+  width: 62px;
+  height: 34px;
+  margin-top: 23px;
+  margin-right: -20px;
+}
+
+.left p {
+  color: #646464;
+  float: left;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-left: 57px;
+  margin-top: 28px;
+}
+
+.left p:hover {
+	font-weight: bold;
+	color: black;
+	transition: all 0.5s;
+}
+
+
+.right {
+  float: right;
+  margin-top: 23px;
+}
+
+/* end of header */
+
+/* jumbotron */
+.jumbotron {
+  background-color: #eeeeee;
+  width: auto;
+  height: 450px;
+  
+}
+
+.description-text {
+  float: left;
+  max-width: 50%;
+  padding-top: 90px;
+  letter-spacing: 1px;
+}
+
+.description-text p {
+  margin-bottom: 10px;
+  line-height: 20px;
+}
+
+.description-text h3 {
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.read-more {
+  background-color: orange;
+  padding: 14px 44px;
+  color: white;
+  border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: 5px 3px 5px 0 rgb(199, 198, 198);
+}
+
+.read-more:hover {
+  background-color: rgb(240, 156, 0);
+}
+
+.read-more:active {
+  box-shadow: none;
+}
+
+
+.description-img img {
+  float: right;
+  width: 287px;
+  height: 333px;
+  margin-top: 59px;
+  margin-right: 100px;
+}
+
+/* end jumbotron */
+
+/* main */
+main {
+  background-color: white;
+  height: 200px;
+  width: auto;
+}
+
+.brand-heading {
+
+  padding-top: 35px;
+}
+
+.brand-img {
+  padding-top: 15px;
+  text-align: center;
+}
+
+.brand {
+  float: left;
+  width: 25%;
+}
+
+.brand-img img {
+  max-height: 82px;
+  max-width: 260px;
+}
+
+/* designer */
+.designer {
+  background-color: white;
+  height: 363px;
+  width: auto;
+}
+.designer .container{
+  height: 363px;
+}
+
+.designer-heading {
+  padding-top: 12px;
+}
+
+.designer-img {
+  padding-top: 30px;
+  height: 300px;
+}
+
+.designer-icon {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+
+.designer-icon img {
+  height: 182px;
+  width: 182px;
+  border-radius: 100%;
+}
+
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.txt-contents h3 {
+  font-size: 15px;
+}
+
+.txt-contents p {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+/* end main */
+
+
+/* footer */
+footer {
+  height: 120px;
+  width: auto;
+  background-color: #e4e4e4;
+}
+
+.footer-left {
+  float: left;
+}
+
+.footer-heading {
+  padding-top: 26px;
+}
+
+.footer-heading h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+
+.footer-icon img {
+  height: 30px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.footer-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.footer-right a {
+  padding: 49px 25px;
+  font-size: 20px;
+  color: #666;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.footer-right a:hover {
+  background-color: #6666;
+  color: black;
+}
+
+/* end footer */
+
+
+/* responsive */
+/*Tablet*/
+@media screen and (max-width: 1200px){
+	.container {
+		padding: 0px 50px;
+	}
+	.jumbotron {
+		height: 375px;
+	}
+	main{
+		height: 300px;
+	}
+	.description-img img {
+		float: right;
+		width: 45%;
+		height: 150 px;
+		margin-top: 20px;
+		margin-right: 0;
+	}
+	.description-text {
+		float: left;
+		max-width: 40%;
+		margin-top: 20px;
+	}
+	.description-text p {
+		margin-bottom: 10px;
+		line-height: 25px;
+	}
+	.description-text h3 {
+		margin-bottom: 20px;
+		font-size: 20px;
+	}
+	
+	.brand{
+		width: 50%;
+		margin-bottom: 40px;
+	}
+	.designer {
+		height:300px;
+	}
+	.designer .container{
+		height:300px;
+	}
+	.designer-img {
+		margin: 0 auto;
+	}
+	.designer-icon img {
+		height: 100px;
+		width: 100px;
+	}
+}
+
+/*Smartphone*/
+@media screen and (max-width: 670px){
+	.container {
+		padding: 0px 40px;
+	}
+	header {
+		height: 40px;
+		position: fixed;
+	}
+	header .container{
+		height: 40px;
+	}
+
+	.menu-icon {
+		display: block;
+	}
+
+	.left{
+		height: 40px;
+		float: left;
+		width: 90%;
+		display: none;
+	}
+	.left img {
+		width: 25px;
+		height: 20px;
+		margin-left: -20px;
+		margin-top: 8px;
+	}
+	.left p {  
+		font-size: 15px;
+		margin-left: 20px;
+		margin-top: 8px;
+		margin-right: 0px;
+	}
+	.right {
+		margin-top: 0px;
+		height: 40px;
+		float: right;
+		width: 10%;
+		margin-right: -15px;
+	}
+	.jumbotron {
+		height: 575px;
+	}
+
+	.read-more {
+		width: 100%;
+		text-align: center;
+	}
+	main{
+		height: 500px;
+	}
+	.description-img{
+		display: block;
+		float: left;
+	}
+	.description-img img {
+		float: left;
+		width: 100%;
+		height: 300px;
+		margin-top: 20px;
+		margin-right: 0;
+	}
+	.description-text{
+		display: block;
+		float: left;
+		padding: 0;
+		max-width: 100%;
+		line-height: 15px;
+	}
+	.description-text a{
+		margin-top:0;
+	}
+	.brand{
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.designer {
+		height:400px;
+	}
+	.designer .container{
+		height:400px;
+		padding: 0 25px;
+	}
+	.designer-img {
+		margin: 0 auto;
+	}
+	.designer-icon {
+		float:left;
+		width: 50%;
+		margin-bottom: 20px;
+	}
+
+
+	footer .container{
+		height: 120px;
+		padding: 0 15px;
+	}
+	.footer-left{
+		float:left;
+		width:55%;
+		margin-left: 20px;
+	}
+	.footer-right{
+		float:right;
+		width:45%;
+		height:94px;
+	}
+	.footer-right a {
+		font-size: 15px;
+		margin: 10px 20px;
+		padding: 10px;
+		display:inline;
+		transition: all 0.5s;
+		padding:0;
+	}
+
+	
+}
+
+/* smaller smartphone */
+@media screen and (max-width: 600px){
+	.menu-icon {
+		display: block;
+	}
+
+	.read-more {
+		width: 100%;
+		text-align: center;
+	}
+
+	.designer {
+		height: 750px;
+	}
+
+	.designer-icon {
+		width: 100%;
+	}
+
+	footer {
+		height:150px;
+		width: 100%;
+	}
+
+	.footer-heading h3 {
+		font-size: 15px;
+	}
+
+	.footer-icon img{
+		height: 25px;
+	}
+
+
+}
